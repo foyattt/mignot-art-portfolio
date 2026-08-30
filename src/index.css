@@ -1,0 +1,330 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #fcf8f2;
+  color: #2c2c2c;
+  font-family: 'EB Garamond', Georgia, serif;
+  -webkit-font-smoothing: antialiased;
+  line-height: 1.6;
+}
+
+h1, h2, h3, nav button, .header-link, .contact-title {
+  font-family: 'Cinzel', serif;
+  letter-spacing: 1px;
+}
+
+.app-container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 2rem 1.5rem;
+  position: relative !important;
+  overflow: visible !important;
+  min-height: 100vh;
+}
+
+/* Header & Top Navigation Bar */
+.site-header {
+  margin-bottom: 2.5rem;
+  border-bottom: 2px solid #b8860b;
+  padding-bottom: 1.5rem;
+}
+
+.top-nav {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+/* Header Links (both <a> and <button>) */
+a.header-link,
+a.header-link:visited,
+button.header-link {
+  background: none;
+  border: none;
+  padding: 0;
+  margin: 0;
+  font: inherit;
+  color: #8b5a2b !important;
+  text-decoration: none !important;
+  font-size: 0.85rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: color 0.2s ease;
+}
+
+a.header-link:hover,
+a.header-link:focus,
+button.header-link:hover,
+button.header-link:focus {
+  color: #b8860b !important;
+  text-decoration: none !important;
+}
+
+.header-title-block {
+  text-align: center;
+}
+
+.artist-name {
+  font-size: 2.8rem;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  color: #1a1a1a;
+  margin-bottom: 0.3rem;
+}
+
+.subtitle {
+  color: #8b5a2b;
+  font-style: italic;
+  font-size: 1.15rem;
+}
+
+/* Category Filter Navigation */
+.filter-nav {
+  display: flex;
+  justify-content: center;
+  gap: 0.8rem;
+  margin-bottom: 3rem;
+  flex-wrap: wrap;
+}
+
+.nav-btn {
+  padding: 0.64rem 1.25rem;
+  border: 1px solid #d4af37;
+  background: #ffffff;
+  color: #2c2c2c;
+  cursor: pointer;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  transition: all 0.2s ease;
+}
+
+.nav-btn:hover {
+  background: #f4ece1;
+}
+
+.nav-btn.active {
+  border: 2px solid #b8860b;
+  background: #b8860b;
+  color: #ffffff;
+}
+
+/* Gallery Showcase Grid */
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+  gap: 2.5rem;
+}
+
+.art-card {
+  background: #ffffff;
+  border: 1px solid #e0d5c1;
+  padding: 1.2rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.04);
+}
+
+/* Rich Gold Metallic Picture Frame Overlay */
+.gold-border {
+  border: 10px solid #d4af37;
+  outline: 2px solid #8b5a2b;
+  box-shadow: inset 0 0 8px rgba(0,0,0,0.4), 0 4px 10px rgba(0,0,0,0.15);
+  background: #fff;
+  padding: 3px;
+}
+
+.art-img {
+  width: 100%;
+  height: 290px;
+  object-fit: cover;
+  display: block;
+}
+
+.art-details {
+  margin-top: 1.2rem;
+}
+
+.tag {
+  font-size: 0.75rem;
+  background: #f4ece1;
+  color: #8b5a2b;
+  padding: 0.2rem 0.5rem;
+  font-weight: bold;
+}
+
+.art-title {
+  margin: 0.6rem 0 0.4rem 0;
+  font-size: 1.2rem;
+  color: #1a1a1a;
+}
+
+.art-medium {
+  font-size: 0.85rem;
+  color: #8b5a2b;
+  font-weight: bold;
+  margin-bottom: 0.6rem;
+}
+
+.inquire-btn {
+  width: 100%;
+  padding: 0.75rem;
+  background: #1a1a1a;
+  color: #ffffff;
+  border: none;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  cursor: pointer;
+  transition: opacity 0.2s ease;
+}
+
+.inquire-btn:hover {
+  opacity: 0.88;
+}
+
+/* Achievements & CV Container */
+.cv-container {
+  max-width: 900px;
+  margin: 60px auto;
+  padding: 40px;
+  background-color: #faf7f2;
+  border: 1px solid #e0d5c5;
+  border-radius: 4px;
+}
+
+.section-title {
+  font-family: 'Cinzel', serif, sans-serif;
+  letter-spacing: 2px;
+  text-align: center;
+  margin-bottom: 35px;
+  color: #2c221e;
+}
+
+.cv-block {
+  margin-bottom: 35px;
+}
+
+.cv-subtitle {
+  font-size: 0.95rem;
+  letter-spacing: 1.5px;
+  color: #8c6d46;
+  border-bottom: 1px solid #d8cbba;
+  padding-bottom: 6px;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+
+.cv-list {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+}
+
+.cv-item {
+  margin-bottom: 20px;
+  line-height: 1.5;
+  color: #2b2320;
+}
+
+.cv-item-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  width: 100%;
+  font-size: 1rem;
+}
+
+.cv-date {
+  font-size: 0.88rem;
+  color: #7a6b63;
+  font-style: italic;
+  white-space: nowrap;
+  margin-left: 16px;
+}
+
+.cv-item-details {
+  margin-top: 6px;
+  font-size: 0.9rem;
+  color: #554842;
+  line-height: 1.4;
+}
+
+.cv-note {
+  color: #7a6b63;
+  font-style: italic;
+}
+
+/* Corner Motif Overlay Accents */
+.corner-motif {
+  position: absolute !important;
+  width: 150px !important;
+  height: 150px !important;
+  border-radius: 50% !important;
+  object-fit: cover !important;
+  opacity: 0.35 !important;
+  pointer-events: none !important;
+  z-index: 10 !important;
+}
+
+.top-left-motif {
+  top: 10px !important;
+  left: 10px !important;
+}
+
+.bottom-right-motif {
+  bottom: 10px !important;
+  right: 10px !important;
+}
+
+/* Contact Footer Section */
+footer.contact-section {
+  display: block !important;
+  width: 100%;
+  clear: both;
+  margin-top: 4rem;
+  padding-top: 2.5rem;
+  border-top: 2px solid #b8860b;
+  text-align: center;
+}
+
+.contact-title {
+  font-size: 1.4rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: #1a1a1a;
+  margin-bottom: 1rem;
+}
+
+.contact-details {
+  display: flex !important;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+  font-size: 1.1rem;
+}
+
+.contact-details a,
+.contact-details a:visited {
+  color: #8b5a2b !important;
+  text-decoration: none !important;
+  font-weight: bold;
+  transition: color 0.2s ease;
+}
+
+.contact-details a:hover,
+.contact-details a:focus {
+  color: #b8860b !important;
+  text-decoration: none !important;
+}
